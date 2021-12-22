@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 class Symbol {
 
     constructor(x, y, fontSize, canvasHeight) {
-        this.characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ♔♕♖♗♘♙♚♛♜♝♞♟☀☁❆❅❄♫♪';
+        this.characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         this.x = x;
         this.y = y;
         this.fontSize = fontSize;
@@ -30,7 +30,7 @@ class Effect {
     constructor(canvasWidth, canvasHeight) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
-        this.fontSize = 25;
+        this.fontSize = 16;
         this.columns = this.canvasWidth/this.fontSize;
         this.symbols = [];
         this.#initialize();
